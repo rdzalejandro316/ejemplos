@@ -1,0 +1,129 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="icomoon/style.css">
+</head>
+<body onload="findMe()"> <!---->
+  <div class="a" id="a">
+    <div class="x">
+      <ul class="menu-x" onclick="cerrar()">
+        <li class="x-1"></li>
+        <li class="x-2"></li>
+      </ul>
+    </div>
+    <div class="con-video">
+
+      <video class="video" id="video">
+          <source src="video/video.mp4" type="video/mp4">
+          <source src="video/video.ogg" type="video/ogg">
+          Your browser does not support HTML5 video.
+      </video>
+
+    </div>
+    <div class="controles">
+      
+    </div>
+  </div>
+  <div class="contenedor">
+    <div class="c-izquierdo">
+      <div class="caja-referencia">
+        <div class="imagen-referencia">
+          <span class="museo">museo</span>
+        </div>
+      </div>
+      <div class="calendario">
+        <div class="contenedor-mes">
+          <div class="mes-izquierda"><span class="m-i" id="anterior" onclick="mesantes()"> ❮ </span></div>
+          <div class="caja-mes">
+            <span class="mes" id="titulos1"></span><br>
+            <span class="anno" id="titulos2"></span>
+          </div>
+          <div class="mes-derecha"><span class="m-d" id="posterior" onclick="mesdespues()"> ❯ </span></div>
+        </div>
+        <div class="fecha">
+            <table id="diasc" class="tabla">
+              <tr id="fila0"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+              <tr id="fila1"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr id="fila2"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr id="fila3"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr id="fila4"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr id="fila5"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr id="fila6"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="c-derecho">
+      <div class="menu">
+        <ul class="caja-menu">
+          <li><a href="index.html" lang="en" class="icon-home"></a>
+            <span class="i-text">Home</span>
+          </li>
+          <li><a href="#" lang="en" class="icon-map"></a>
+            <span class="i-text">Mapa</span>
+          </li>
+          <li><a href="#" lang="en" class="icon-shopping-cart"></a>
+            <span class="i-text">Compras</span>
+          </li>
+          <li><a href="#" lang="en" class="icon-traffic-cone"></a>
+            <span class="i-text">Trafico</span>
+          </li>
+          <li><a href="#" lang="en" class="icon-old-phone"></a>
+            <span class="i-text">Telefono</span>
+          </li>
+          <li><a href="#" lang="en" class="icon-aircraft"></a>
+            <span class="i-text">Aeropuerto</span>
+          </li>
+          <li><a href="hola.html" lang="en" class="icon-tree"></a>
+            <span class="i-text">Lugares</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medio">
+        <div class="caja-video">
+          <div class="imagen">
+            <a id="play-video" class="video-play-button" onclick="mostrar()">
+              <span></span>
+            </a>
+          </div>
+        </div>
+        <div class="caja-mapa">
+
+            <div id="map" class="mapa-imagen"></div>
+
+        </div>
+        <div class="caja-temperatura">
+          <div class="temp">
+            <span class="">23</span>
+            <span class="">asas</span>
+          </div>
+          <div class="clima">
+              <div class="cl">
+
+              </div>
+             <div class="gra">
+
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="pie">
+        <audio controls>
+            <source src="audio/himno.ogg" type="audio/ogg">
+            <source src="audio/himno.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+  </div>
+</body>
+<!--<script type="text/javascript" src="js/ubicacion.js"></script>-->
+<script type="text/javascript" src="js/calendario.js"></script>
+<script type="text/javascript" src="js/video.js"></script>
+</html>

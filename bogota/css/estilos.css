@@ -1,0 +1,487 @@
+*{
+   --body: #dedddd;
+   --contenedor: #ffffff;
+   --color: #3498db ;
+   --sombra: 2px 2px 5px 0px rgba(0, 0, 0, 0.35);
+   --borde: 5px;
+   font-family: 'Roboto', sans-serif;
+}
+.a{
+  background-color: rgba(0, 0, 0, 0.90);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 4;
+  display: block;
+  transition: all 5s;
+}
+.mostrar{
+  background-image: url(https://tympanus.net/Development/MultiMediaGallery/images/grid_overlay.PNG);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+/*  display: block;*/
+  transition: all 5s;
+}
+.x{
+  float: right;
+  width: 40px;
+  height: 40px;
+  right: 30px;
+  position: relative;
+  top: 20px;
+}
+.x ul{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+.cerrar {
+  display: none;
+}
+.x ul:hover{
+  cursor: pointer;
+}
+
+.x-1{
+  width: 60%;
+  background-color: white;
+  height: 5%;
+  transform: rotate(40deg) translate(18px, 10px);
+}
+.x-2{
+  width: 60%;
+  height: 5%;
+  background-color: white;
+  transform: rotate(-40deg) translate(-5px, 18px);
+}
+.con-video{
+  width: 50%;
+  height: 50%;
+  top:15%;
+  left: 25%;
+  position: relative;
+  border:1px solid white;
+  background-image: url(https://tympanus.net/Development/MultiMediaGallery/images/grid_overlay.PNG);
+}
+.video{
+  width: 100%;
+  height: 80%;
+  position: relative;
+  top: 10%;
+}
+.controles{
+  background-color: var(--color);
+  width: 50%;
+  height: 10%;
+  position: relative;
+  top:15%;
+  left:25%;
+  border: 1px solid white;
+  border-top: 0px;
+}
+
+
+
+
+body{
+  background: var(--body);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.contenedor{
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  position: relative;
+  display: flex;
+}
+.c-izquierdo{
+  width: 30%;
+  height: 100%;
+}
+.caja-referencia{
+  width: 100%;
+  height: 45%;
+}
+.imagen-referencia{
+  width: 100%;
+  height: 100%;
+  background-image: url(https://ugc.kn3.net/i/origin/http://dianaotavo.files.wordpress.com/2012/09/plaza-de-bolivar-11.jpg);
+  background-size: cover;
+  transition: all 0.3s;
+  display: inline-block;
+  box-shadow: var(--sombra);
+  border-radius: var(--borde);
+  text-align: center
+}
+.museo:hover{
+  cursor: pointer;
+}
+.museo{
+  top: 50%;
+  position: relative;
+  border: 1px solid;
+  padding: 5px 20px 5px 20px;
+  color: white;
+  background-color: var(--color);
+  z-index: 0;
+}
+.museo:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 100%;
+  height: 110%;
+  background: var(--body);
+  border-radius: 10px;
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+
+.calendario{
+  background-color: var(--contenedor);
+  width: 100%;
+  top: 5%;
+  height: 50%;
+  position: relative;
+  box-shadow: var(--sombra);
+  border-radius: var(--borde);
+}
+.contenedor-mes{
+  width: 100%;
+  height: 20%;
+  display: flex;
+}
+.mes-izquierda, .mes-derecha{
+  width: 10%;
+  height: 100%;
+  text-align: center;
+}
+.m-i, .m-d{
+  top: 40%;
+  position: relative;
+  color: var(--color);
+}
+.mes{
+  top: 15%;
+  position: relative;
+  font-size: 20px;
+  color: #3498db;
+}
+.anno{
+  top: 20%;
+  position: relative;
+  font-size: 10px;
+  font-weight: bold;
+}
+.m-i:hover, .m-d:hover{
+  cursor: pointer;
+}
+.m-i::selection, .m-d::selection{
+  background: none;
+}
+
+.caja-mes{
+  width: 80%;
+  height: 100%;
+  text-align: center;
+}
+
+
+
+.fecha{
+  background-color: var(--color);
+  width: 100%;
+  height: 80%;
+  border-radius: 0px 0px 5px 5px;
+
+}
+.tabla{
+  width: 90%;
+  height: 100%;
+  left: 5%;
+  position: relative;
+}
+tr{ height: 15%; }
+
+th{ font-size: 10px; padding-top: 8px;color: #f1c40f}
+
+td{ font-size: 10px; padding: 8px;text-align: center; }
+
+cite{
+  border-radius: 19px;
+  background-color: #2c3e50;
+  width: 100%;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+/*------------------------------*/
+.c-derecho{
+  left: 10%;
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+
+.menu{
+  background-color: var(--contenedor);
+  width: 100%;
+  height: 10%;
+  position: relative;
+  box-shadow: var(--sombra);
+  border-radius: var(--borde);
+}
+.caja-menu{
+  width: 90%;
+  height: 90%;
+  left: 3%;
+  top: 5%;
+  position: relative;
+  display: flex
+}
+.caja-menu li {
+  width: 15%;
+  height: 100%;
+  text-align: center;
+}
+
+.i-text{
+  font-size: 15px;
+  display: none;
+  position: absolute;
+  top: -25px;
+  color: white;
+  padding: 5px;
+  background-color: var(--color);
+  box-shadow: var(--sombra);
+  border-radius: var(--borde);
+}
+.i-text:before{
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--color);
+  box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, 0.35);
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  transform: rotate(40deg)
+}
+li a:hover ~ .i-text{
+  display: initial;
+}
+li * {
+  color: var(--body);
+}
+[lang|=en]{
+    position: absolute;
+    font-size: 30px;
+    top: 15%;
+}
+[lang|=en]:hover{
+    cursor: pointer;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 1s;
+    /*animation-iteration-count: infinite;*/
+}
+@keyframes example {
+    0%   {transform: rotate(0deg);animation-timing-function: ease;}
+    25%  {transform: rotate(20deg);animation-timing-function: ease;}
+    50%  {transform: rotate(0deg);animation-timing-function: ease;}
+    75%  {transform: rotate(-20deg);animation-timing-function: ease;}
+    100% {transform: rotate(0deg);animation-timing-function: ease;}
+}
+
+/*-----------------------------------------------*/
+.medio{
+  width: 100%;
+  height: 60%;
+  top: 5%;
+  position: relative;
+}
+.caja-video{
+  width: 35%;
+  height: 45%;
+  position: relative;
+  box-shadow: var(--sombra);
+  border-radius: var(--borde);
+  display: inline-block;
+  overflow: hidden;
+}
+.imagen{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--contenedor);
+  box-shadow: var(--sombra);
+  border-radius: var(--borde);
+  display: inline-block;
+  background-image: url(../imagen/imgvideo.jpg);
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s;
+}
+.imagen:hover{
+  transform: scale(1.2);
+  /*opacity: 0.7;*/
+}
+/*_________________*/
+.video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: content-box;
+  display: block;
+  width: 32px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 18px 20px 18px 28px;
+}
+.video-play-button:hover{
+  cursor: pointer;
+}
+.video-play-button:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: var(--body);
+  border-radius: 50%;
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+.video-play-button:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: var(--color);
+  border-radius: 50%;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+.video-play-button span {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #fff;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  top: 8px;
+  left: 5px;
+}
+@-webkit-keyframes pulse-border {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/*__________________________________________*/
+.caja-temperatura{
+  width: 35%;
+  height: 50%;
+  top: 5%;
+  position: relative;
+  background-color: var(--contenedor);
+  box-shadow: var(--sombra);
+  border-radius: var(--borde);
+  display: inline-block;
+  display: flex;
+}
+.temp{
+  background-color: black;
+  width: 50%;
+  height: 100%;
+  border-radius: 5px 0px 0px 5px;
+  color: white
+}
+.clima{
+  width: 50%;
+  height: 100%;
+
+}
+.cl{
+  background-color: white;
+  width: 100%;
+  height: 70%;
+  border-radius: 0px 5px 0px 0px;
+}
+.gra{
+  background-color: var(--color);
+  width: 100%;
+  height: 30%;
+  border-radius: 0px 0px 5px 0px;
+}
+/*__________________________________________*/
+.caja-mapa{
+  width: 60%;
+  height: 100%;
+  float: right;
+  position: relative;
+  background-color: var(--contenedor);
+  box-shadow: var(--sombra);
+  border-radius: var(--borde);
+  display: inline-block;
+}
+.mapa-imagen{
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--sombra);
+    border-radius: var(--borde);
+}
+
+
+
+/*-----------------------------------------------*/
+.pie{
+  background-color: var(--contenedor);
+  width: 100%;
+  height: 20%;
+  top: 10%;
+  position: relative;
+  box-shadow: var(--sombra);
+  border-radius: var(--borde);
+}
